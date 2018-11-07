@@ -14,7 +14,7 @@ module.exports = Comment;
 var Request = require('./request');
 var Account = require('./account');
 var Media = require('./media');
-
+ 
 
 Comment.prototype.parseParams = function (json) {
   var hash = camelKeys(json);
@@ -90,3 +90,17 @@ Comment.bulkDelete = function(session, mediaId, commentIds) {
             return data;
         })
 }
+
+Comment.like = function(session, commentId) {
+    return new Request(session)
+        .setMethod('POST')
+        .setResource('commentLike', {id: commentId})
+        .generateUUID()
+        .signPayload()
+        .send()
+        .then(function(data) {
+            return data;
+        })
+}
+
+

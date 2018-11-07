@@ -14,6 +14,7 @@ const ROUTES = {
     comment: 'media/<%= id %>/comment/',
     commentDelete: 'media/<%= id %>/comment/<%= commentId %>/delete/',
     commentBulkDelete: 'media/<%= id %>/comment/bulk_delete/',
+    commentLike: 'media/<%= id %>/comment_like/',
     like: 'media/<%= id %>/like/',
     unlike: 'media/<%= id %>/unlike/',
     registrationCreate: 'accounts/create/',
@@ -79,7 +80,8 @@ const ROUTES = {
     save: 'media/<%= id %>/save/',
     unsave: 'media/<%= id %>/unsave/',
     userStory: 'feed/reels_media/',
-    storyTray: 'feed/reels_tray/'
+    storyTray: 'feed/reels_tray/',
+    newsFeed: 'news/'
 };
 
 

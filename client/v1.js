@@ -30,6 +30,7 @@ InstagramV1.Upload = require('./v1/upload');
 InstagramV1.discover = require('./v1/discover');
 InstagramV1.Save = require('./v1/save');
 InstagramV1.search = require('./v1/search');
+InstagramV1.Newsfeed = require('./v1/newsfeed');
 
 var creator = require('./v1/account-creator');
 InstagramV1.AccountCreator = creator.AccountCreator;
